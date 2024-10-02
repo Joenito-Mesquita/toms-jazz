@@ -1,0 +1,328 @@
+body {
+  background-color: #FFE7D1;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+/*Cabeçalho*/
+header {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5.5rem;
+  width: 95%;
+  height: auto;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  gap: 5rem;
+}
+
+/*Texto principal*/
+.headline {
+  display: flex;
+  padding: 0 0 12rem 5.5rem;
+}
+
+.text-headline {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.text-headline .slogan {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.text-headline .slogan .brigth {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.text-headline .text {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.text-headline .button {
+  width: 42%;
+  margin-bottom: 1rem;
+}
+
+/*Cursos*/
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-colections {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0 5.5rem;
+  margin-bottom: 9rem;
+}
+
+.card-colections h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.card-colections .text {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.card-colections .card1 {
+  border: 2px solid black;
+  box-shadow: 5px 4px black;
+  width: 25%;
+  height: 30%;
+  background-color: #ED4D1B;
+  position: relative;
+  top: -6rem;
+  padding: 1rem 2rem;
+}
+
+.card-colections .card2 {
+  border: 2px solid black;
+  box-shadow: 5px 4px black;
+  width: 25%;
+  height: 30%;
+  background-color: #FF9A3C;
+  position: relative;
+  top: -4rem;
+  padding: 1rem 2rem;
+}
+
+.courses h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.courses .button {
+  margin-bottom: 8rem;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 5.5rem 8rem 5.5rem;
+}
+
+footer .footer-text {
+  font-size: 20px;
+  margin-right: 10rem;
+  width: 30%;
+  height: auto;
+}
+
+footer .footer-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+footer .footer-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+footer .menu {
+  width: 20%;
+  height: auto;
+  font-size: 24px;
+}
+
+footer .menu li{
+  padding-bottom: 1rem;
+}
+
+footer .input-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+}
+
+footer .input-form .input-text {
+  font-size: 24px;
+  padding-bottom: 2rem;
+}
+
+footer .input-form .email {
+  border: 2px solid black;
+  box-shadow: 5px 4px black;
+  margin-bottom: 2rem;
+  width: 75%;
+  height: 3rem;
+}
+
+footer .input-form .button {
+  width: 30%;
+  height: auto;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1324px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h3{
+    font-weight: bold;
+  }
+
+  header .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem
+  }
+
+  .headline{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 0 5rem 1rem;
+  }
+
+  .headline .text-headline {
+    width: 100%;
+    height: auto;
+  }
+
+  .headline .text-headline .slogan{
+    font-size: 3rem;
+  }
+
+  .headline .text-headline .button {
+    width: 200px;
+  }
+
+  .courses .card-colections{
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem 0 0 0;
+  }
+
+  .courses .card-colections .card1{
+    width: 90%;
+    position: static;
+  }
+
+  .courses .card-colections .card2{
+    width: 90%;
+    position: static;
+  }
+
+  .courses h1 {
+    font-size: 40px;
+  }
+
+  .courses .button {
+    width: 225px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 1rem 0 2rem 0;
+  }
+
+  footer .footer-text {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  footer .menu {
+    width: 90%;
+  }
+
+  footer .input-form {
+    width: 90%;
+  }
+
+  footer .input-form .button {
+    width: 225px;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+header h3 {
+  display: none;
+  visibility: hidden;
+}
+}
+
+
+/*Imagens*/
+#bandGroup {
+width: 80%;
+height: auto;
+padding-top: 0;
+}
+
+#vector1 {
+  width: 20%;
+  height: auto;
+  margin-left: 7rem;
+}
+
+#brigthImg {
+  width: 10%;
+  height: auto;
+}
+
+.vector2 {
+  margin-left: 80%;
+}
+
+/*Globais*/
+.button {
+  background-color: #ED4D1B;
+  border: 2px solid black;
+  box-shadow: 5px 4px black;
+  font-size: 20px;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+.brigth {
+  color: #ED4D1B;
+}
+
+.border {
+  border: 1px solid black;
+  border-top: none;
+  width: 95%;
+  height: auto
+}

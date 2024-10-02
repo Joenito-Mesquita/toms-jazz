@@ -1,0 +1,86 @@
+/* Reset CSS Completo */
+
+/* Para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia */
+html {
+  font-size: 100%; /* Define a base de 16px */
+  line-height: 1.5; /* Melhora a legibilidade */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Define uma fonte padrão */
+  background-color: #f9f9f9; /* Cor de fundo padrão */
+  color: #333; /* Cor de texto padrão */
+}
+
+/* Estilos de listas */
+ul, ol {
+  list-style: none; /* Remove marcadores de lista */
+}
+
+/* Tabelas */
+table {
+  border-collapse: collapse; /* Remove espaço entre as bordas das células */
+  width: 100%; /* Tabela ocupa a largura total */
+}
+
+th, td {
+  padding: 8px; /* Espaçamento interno das células */
+  text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Links */
+a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: inherit; /* Faz com que a cor do link herde a cor do texto */
+}
+
+/* Botões */
+button {
+  background: none; /* Remove fundo padrão */
+  border: none; /* Remove borda padrão */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Imagens */
+img {
+  max-width: 100%; /* Assegura que as imagens não ultrapassem a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Formulários */
+input, textarea, select {
+  font-family: inherit; /* Faz com que os campos do formulário herdem a fonte do body */
+  font-size: inherit; /* Mantém o tamanho da fonte consistente */
+  line-height: inherit; /* Mantém a altura da linha consistente */
+}
+
+/* Outros elementos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; /* Remove o peso da fonte padrão */
+}
+
+blockquote {
+  margin: 0; /* Remove margens */
+  padding: 0.5em 20px; /* Estilo de citação */
+  border-left: 4px solid #ccc; /* Borda à esquerda */
+  color: #666; /* Cor do texto da citação */
+}
+
+/* Estilos de foco */
+:focus {
+  outline: none; /* Remove a borda de foco padrão */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+      font-size: 90%; /* Ajusta o tamanho da fonte em dispositivos menores */
+  }
+}
